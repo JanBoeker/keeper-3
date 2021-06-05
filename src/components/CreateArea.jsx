@@ -35,11 +35,14 @@ function CreateArea(props) {
         />
         <button onClick={(event) => {
           event.preventDefault();
-          props.onAdd(note);
-          setNote({
-            title: "", 
-            content: ""
-          });
+
+          if (note.title !== "") {
+            props.onAdd(note);
+            setNote({
+              title: "", 
+              content: ""
+            });
+          }
         }}
         >Add</button>
       </form>
