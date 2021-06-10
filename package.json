@@ -1,21 +1,27 @@
 {
-  "name": "keeper-3",
+  "name": "keeper-part-3-starting",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JanBoeker/keeper-3.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JanBoeker/keeper-3/issues"
-  },
-  "homepage": "https://github.com/JanBoeker/keeper-3#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
